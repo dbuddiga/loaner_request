@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element extends="task" label="Loaner request" max_length="40" name="x_snc_loaner_req_loaner_request" type="collection"/>
+    <element extends="task" label="Loaner request" max_length="40" name="x_snc_loaner_req_loaner_request" type="collection">
+        <element label="Requested for" max_length="32" name="u_reference_1" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_string_2" type="string"/>
+    </element>
 </database>
